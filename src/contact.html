@@ -34,6 +34,79 @@
         </nav>
     </header>
 
+    <main>
+
+        <!-- Page introduction -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contact &amp; Feedback</h1>
+                <p>
+                    Have a question, a suggestion or a book request?
+                    Visit us, call us, or send us a message below.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section container">
+
+            <!-- Contact information -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <h3>Library Address</h3>
+                        <p>Readers' Haven Public Library<br>Main Boulevard, Lahore, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+923001234567">+92 300 1234567</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@readershaven.com">info@readershaven.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback form (static HTML only: no backend, no JavaScript) -->
+            <div class="contact-form-box">
+                <h2>Send Us Your Feedback</h2>
+
+                <form class="contact-form" action="#" method="get">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Your full name"
+                           required minlength="2" maxlength="60">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="you@example.com"
+                           required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                              placeholder="Write your message here (at least 10 characters)"
+                              required minlength="10" maxlength="500"></textarea>
+
+                    <button type="submit" class="contact-button">Submit</button>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
 
     <footer class="site-footer">
 
