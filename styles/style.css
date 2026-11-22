@@ -889,3 +889,122 @@ ul {
         width: 100%;
     }
 }
+/* ================= COLLECTIONS PAGE ================= */
+
+.collections-hero {
+    background: linear-gradient(135deg, #164734, #21664a);
+    color: #ffffff;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.collections-label {
+    color: #d6ad60;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.collections-hero h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.collections-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.collections-section {
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.collections-heading {
+    margin-bottom: 25px;
+}
+
+.collections-heading h2 {
+    color: #164734;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.collections-heading p {
+    color: #26352d;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.collection-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.09);
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-6px);
+}
+
+.collection-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background: #eaf2ed;
+    padding: 15px;
+}
+
+.collection-card-info {
+    padding: 20px;
+}
+
+.collection-card-info h3 {
+    color: #164734;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.collection-card-info p {
+    color: #26352d;
+    line-height: 1.6;
+}
+
+.collection-card-info .book-author {
+    color: #21664a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+    .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    .collections-hero {
+        padding: 60px 15px;
+    }
+
+    .collections-hero h1 {
+        font-size: 30px;
+    }
+
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-card img {
+        height: 260px;
+    }
+}
