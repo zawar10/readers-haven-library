@@ -361,10 +361,7 @@ ul {
     .services-grid {
         grid-template-columns: 1fr;
     }
-}/* =========================================
-   6. CONTACT PAGE
-========================================= */
-
+}
 .contact-hero {
     background-color: var(--primary-color);
     color: var(--white);
