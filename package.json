@@ -2,7 +2,7 @@
   "name": "readers-haven-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "scripts": {
     "build": "parcel build src/*.html --dist-dir dist --public-url ./"
   },
