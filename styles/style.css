@@ -222,3 +222,143 @@ ul {
         margin: 0 auto;
     }
 }
+/* =========================================
+   5. SERVICES PAGE
+========================================= */
+
+.services-hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 70px 0;
+}
+
+.services-hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.services-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #d4e1d9;
+    font-size: 17px;
+}
+
+.services-section {
+    padding-top: 50px;
+}
+
+.services-heading {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    border-top: 4px solid var(--accent-color);
+    padding: 28px 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.service-card h4 {
+    color: var(--secondary-color);
+    font-size: 15px;
+    margin: 15px 0 6px;
+}
+
+.service-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.service-card li {
+    margin-bottom: 4px;
+}
+
+.service-time {
+    background-color: var(--light-green);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 15px;
+}
+
+.services-help {
+    background-color: var(--light-green);
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.services-help h2 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.services-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 6px;
+    margin-top: 18px;
+    transition: 0.3s ease;
+}
+
+.services-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Services page: responsive */
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-hero {
+        padding: 45px 0;
+    }
+
+    .services-hero h1 {
+        font-size: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
